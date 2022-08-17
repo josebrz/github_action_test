@@ -11,4 +11,4 @@ jobs:
       - name: Show ref v1
         run: echo "===============> Version from $GITHUB_REF"
       - name: Show other ref
-        run: echo "================> other version ${{github.ref_name}} | cut -c1-"
+        run: echo "================> other version ${{github.ref_name | cut -c1-}}"
